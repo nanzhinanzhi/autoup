@@ -3,7 +3,6 @@ from email.mime.text import MIMEText
 from email.header import Header
 import requests,json,time,datetime,smtplib
 loginurl ='http://hmgr.sec.lit.edu.cn/wms/healthyLogin'
-tableurl = 'http://hmgr.sec.lit.edu.cn/web/#/health'
 uploadurl = 'http://hmgr.sec.lit.edu.cn/wms/addHealthyRecord'
 queryurl = 'http://hmgr.sec.lit.edu.cn/wms/healthyRecordByUser?'
 headers ={
