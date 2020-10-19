@@ -1,6 +1,6 @@
 # 洛阳理工学院健康汇报自动打卡
 
-1.修改up.py
+1. 修改up.py
 
 第17行写入用户名，密码，邮件
 
@@ -28,7 +28,7 @@ userlist =[{
     sender = '' #发送邮件账号
 ```
 
-2.服务器部署
+2. 服务器部署
 
 1.将up.py和run.sh上传到服务器，我这里部署的路径是
 
@@ -42,7 +42,14 @@ userlist =[{
 yum install -y crontabs
 ```
 
-3.创建定时任务
+3.赋予执行权限
+
+```
+chmod +x run.sh
+chmod +x up.py
+```
+
+4.创建定时任务
 
 ```
 crontab -e
