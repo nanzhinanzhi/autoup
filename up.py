@@ -94,6 +94,7 @@ def upload():
     headers["token"]=s["data"]["token"]
     updata["mobile"] = s["data"]["mobile"]
     updata["userId"]=s["data"]["userId"]
+    updata["teamId"] = s["data"]["teamId"]
     print("打印修改后的header和updata")
     print(headers)
     print(time.strftime("%Y-%m-%d", time.localtime()))
