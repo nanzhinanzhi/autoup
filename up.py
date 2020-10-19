@@ -124,11 +124,10 @@ def addparam(url, data):
         return url
 def mail(s,receivers):
     # 第三方 SMTP 服务
-    mail_host = "smtp.qq.com"  # 设置服务器
-    mail_user = "3060741258"  # 用户名
-    mail_pass = "rskamvbydijedeag"  # 口令
-
-    sender = '3060741258@qq.com'
+    mail_host = ""  # 设置服务器
+    mail_user = ""  # 用户名
+    mail_pass = ""  # 口令
+    sender = '' #发送邮件账号
     receivers = receivers # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
 
     message = MIMEText(str(s['data']['list'][15]), 'plain', 'utf-8')
