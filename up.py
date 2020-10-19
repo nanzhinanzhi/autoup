@@ -172,6 +172,7 @@ def query(queryurl,heads,s,receivers):
     data['startTime'] = startTime
     data['endTime'] = endTime
     data["userId"] = s["data"]["userId"]
+    data["teamId"] = s["data"]["teamId"]
     queryurl = addparam(queryurl,data)
     res = requests.get(url=queryurl, headers=headers)
     if res.status_code == 200:
